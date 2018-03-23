@@ -1,0 +1,59 @@
+<form class="container container-fluid">
+    <div class="row mb-2 ml-2">
+            <button  class="btn btn-warning mr-2" id="btnDefaults">Load defaults</button>
+            <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="btnLoadFrom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Load from
+                    </button>
+                    <div class="dropdown-menu" id="settingsList" aria-labelledby="btnLoadFrom"></div>
+                </div>
+    </div>
+    <div class="row mb-2 ml-2">
+        <span>Settings version: &nbsp;<b id="version">{{version}}</b></span>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header mb-0">General</div>
+                <div class="card-body">
+                    <div id="General"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">LED</div>
+                <div class="card-body">
+                    <div id="LED"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">Motor</div>
+                <div class="card-body">
+                    <div id="Motor"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Movement</div>
+                <div class="card-body">
+                    <div id="Movement"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Detection</div>
+                <div class="card-body">
+                    <div id="Detection"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary float-sm-right" id="btnSave">Save Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>

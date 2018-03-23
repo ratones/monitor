@@ -1,0 +1,151 @@
+<div id="userContainer" class="well-centered">
+    <div class="w2ui-page page-0">
+        <div class="w2ui-field">
+            <label>Username:</label>
+            <div>
+                <input name="username" id="username" type="text" maxlength="100" size="40" readonly/>
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Nume afisat:</label>
+            <div>
+                <input name="user_displayname" id="user_displayname" type="text" maxlength="100" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Email:</label>
+            <div>
+                <input name="email" id="email" type="email" maxlength="100" size="40" />
+            </div>
+        </div>
+    </div>
+    <!--Date proxy-->
+    <div class="w2ui-page page-1">
+        <div class="w2ui-field">
+            <label> Activeaza proxy:</label>
+            <div>
+                <input type="checkbox" name="setupproxy" id="setupproxy" />
+                <span class="check"></span>
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Protocol(http/https):</label>
+            <div>
+                <input type="text" name="proxy_protocol" id="proxy_protocol" class="proxydata form-control" disabled="disabled" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> User:</label>
+            <div>
+                <input type="text" name="proxy_user" id="proxy_user" class="proxydata form-control" disabled="disabled" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Password:</label>
+            <div>
+                <input type="password" name="proxy_pass" id="proxy_pass" class="proxydata form-control" disabled="disabled" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Adresa(ip):</label>
+            <div>
+                <input type="text" name="proxy_address" id="proxy_address" class="proxydata form-control" disabled="disabled" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Port:</label>
+            <div>
+                <input type="text" name="proxy_port" id="proxy_port" class="proxydata form-control" disabled="disabled" />
+            </div>
+        </div>
+    </div>
+    <div class="w2ui-page page-2">
+        <div class="w2ui-field">
+            <label> Parola curenta:</label>
+            <div>
+                <input type="password" name="password" id="password" class="form-control" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Parola noua:</label>
+            <div>
+                <input type="password" name="newpass" id="newpass" class="form-control" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label> Confirma parola:</label>
+            <div>
+                <input type="password" name="confirmedpass" id="confirmedpass" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <!--Date Beneficiar-->
+    <div class="w2ui-page page-3">
+        <div class="w2ui-field">
+            <label>Denumire beneficiar</label>
+            <div>
+                <input name="company" id="company" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Adresa:</label>
+            <div>
+                <textarea name="address" id="address" style="width: 318px; height: 80px; resize: none"></textarea>
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Telefon</label>
+            <div>
+                <input name="telefon" id="telefon" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Fax</label>
+            <div>
+                <input name="fax" id="fax" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Reprezentanti legali</label>
+            <div id="grid_rep" style="width:500px;min-height:250px">
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Calitate</label>
+            <div>
+                <input name="calitate" id="calitate" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Registrul Comertului</label>
+            <div>
+                <input name="nr_reg_com" id="nr_reg_com" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>CUI</label>
+            <div>
+                <input name="cui" id="cui" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>IBAN</label>
+            <div>
+                <input name="cont" id="cont" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Banca</label>
+            <div>
+                <input name="banca" id="banca" type="text" maxlength="150" size="40" />
+            </div>
+        </div>
+    </div>
+    <div class="w2ui-buttons">
+        <button class="w2ui-btn" name="reset">Resetare cache</button>
+        <button class="w2ui-btn w2ui-btn-primary" name="save">Save</button>
+    </div>
+</div>
+<div class="well well-sm well-centered">
+    Nota: Pentru modificarea utilizatorilor corespunzatori beneficiarului va rugam sa contactati reprezentantii RAR.
+</div>

@@ -1,0 +1,63 @@
+{
+	"name": "appciv",
+	"main": "build/index.html",
+	"version": "2.0.0",
+	"description": "CIV app",
+	"repository": {},
+	"scripts": {
+		"start": "gulp",
+		"run": "nw"
+	},
+	"private": true,
+	"dependencies": {
+		"babel-preset-es2015": "^6.3.13",
+		"babel-preset-react": "^6.3.13",
+		"babel-preset-stage-1": "^6.3.13",
+		"babelify": "^7.2.0",
+		"backbone": "^1.3.3",
+		"backbone.marionette": "^3.1.0",
+		"browser-sync": "^2.11.0",
+		"browserify": "^13.0.0",
+		"gulp": "^3.8.10",
+		"gulp-concat": "^2.6.0",
+		"gulp-concat-css": "^2.3.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-notify": "^2.1.0",
+		"gulp-uglify": "^2.0.0",
+		"gulp-util": "^3.0.1",
+		"gulp-zip": "^3.2.0",
+		"handlebars": "^4.0.5",
+		"hbsfy": "^2.7.0",
+		"jquery": "^3.1.1",
+		"merge-stream": "^1.0.1",
+		"pretty-hrtime": "^1.0.1",
+		"require-dir": "^0.3.0",
+		"underscore": "^1.7.0",
+		"vinyl-source-stream": "^1.0.0",
+		"watchify": "^3.6.1",
+		"node-webkit-updater": "^0.3.3",
+		"request": "^2.76.0"
+	},
+	"window": {
+		"domain": "localhost",
+		"title": "Aplicatie CIV",
+		"show": true,
+		"width": 1280,
+		"height": 1024,
+		"min_width": 800,
+		"min_height": 600,
+		"toolbar": true,
+		"kiosk": false
+	},
+	"chromium-args": "--child-clean-exit --ignore-certificate-errors --allow-autofill-sync-credential",
+	"manifestUrl": "http://localhost:5051/appciv/civutils/getmanifest",
+	"packages": {
+		"win": {
+			"url": "http://localhost:5051/appciv/civutils/getupdate",
+			"execPath": "AplicatieCIV.exe",
+			"filename": "app.zip",
+			"runtime":"nwjs.msi",
+			"runtimeversion":"0.14.2"
+		}
+	}
+}

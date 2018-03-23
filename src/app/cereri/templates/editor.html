@@ -1,0 +1,46 @@
+ <div class="w2ui-page page-0" >
+    <div id="daterar_container">
+        <div class="w2ui-field">
+            <label>Nr. inregistrare RAR</label>
+            <div>
+                <input type="text" id="id" name="id" readonly size="30" />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Data Inregistrare</label>
+            <div>
+                <input type="text" id="data_comanda" name="data_comanda" class="datepicker" readonly size="30"/>
+            </div>
+        </div>
+    </div>
+    <div id="date_beneficiar_container">
+        <div class="w2ui-field " id="addBeneficiar">
+            <label>Beneficiar</label>
+            <div>
+                <input type="text" id="id_beneficiar" name="id_beneficiar" size="30" />
+            </div>
+        </div>
+    </div>
+        <div class="w2ui-field">
+            <label>Nr. registru client</label>
+            <div>
+                <input type="text" id="nr_inreg_soc" name="nr_inreg_soc" size="30" placeholder="Cerere client..." required />
+            </div>
+        </div>
+        <div class="w2ui-field">
+            <label>Data registru client</label>
+            <div>
+                <input type="text" id="data_inreg" name="data_inreg" size="30" class="datepicker" placeholder="Data Cerere client..." />
+            </div>
+        </div>
+
+
+    </div>
+    <div class="w2ui-buttons">
+        <button title="Renunta"  name="cancel" id="btnCancelEdit" class="w2ui-btn w2ui-btn-red" >
+            <i class="w2ui-icon-cross"></i> Inchide
+        </button>
+        <button title="Salvare" id="btnSaveComanda" class="w2ui-btn w2ui-btn-blue" name="save">
+            <i class="w2ui-icon-save"></i> Salveaza
+        </button>
+    </div>

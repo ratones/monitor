@@ -1,0 +1,109 @@
+<form class="pl-4 pr-4">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">Device info</div>
+                <div class="card-body">
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="name" class="col-sm-3 col-form-label">Device name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="name" class="form-control form-control-sm" placeholder="Device name">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label for="power" class="col-sm-3 col-form-label">Power:</label>
+                        <div class="col-sm-9">
+                            <select id="power" width="100%" class="form-control form-control-sm" placeholder="Power">
+                                <option value="Plug">Plug</option>
+                                <option value="Battery">Battery</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label for="status" class="col-sm-3 col-form-label">Status:</label>
+                        <div class="col-sm-9">
+                            <select id="status" width="100%" class="form-control form-control-sm" placeholder="Status">
+                                <option value="Active">Active</option>
+                                <option value="Disabled">Disabled</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="location" class="col-sm-3 col-form-label">Device location:</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="location" class="form-control form-control-sm" placeholder="Device location">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label for="campaign_id" class="col-sm-3 col-form-label">Campaign:</label>
+                        <div class="col-sm-9">
+                            <select id="campaign_id" width="100%" class="form-control form-control-sm" placeholder="Campaign"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col hide-new">
+            <div class="card">
+                <div class="card-header">Device status</div>
+                <div class="card-body">
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="battery" class="col-sm-3 col-form-label">Device battery:</label>
+                        <div class="col-sm-9">
+                            <p  id="battery" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="product" class="col-sm-3 col-form-label">Device product:</label>
+                        <div class="col-sm-9">
+                            <p  id="product" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="sound" class="col-sm-3 col-form-label">Device sound:</label>
+                        <div class="col-sm-9">
+                            <p  id="sound" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="mechanism" class="col-sm-3 col-form-label">Device mechanism:</label>
+                        <div class="col-sm-9">
+                            <p  id="mechanism" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="activations" class="col-sm-3 col-form-label">Device activations:</label>
+                        <div class="col-sm-9">
+                            <p  id="activations" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0 mb-0">
+                        <label for="updated" class="col-sm-3 col-form-label">Last updated:</label>
+                        <div class="col-sm-9">
+                            <p  id="updated" class="form-control-plaintext"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <button class="btn btn-primary float-sm-right ml-2" id="btnSave">Save</button>
+            <button class="btn btn-secondary float-sm-right ml-2 hide-new" id="btnStatus">Request status</button>
+            <button class="btn btn-warning float-sm-right ml-2 hide-new" id="btnActivations">Request activations</button>
+            <button class="btn btn-danger float-sm-right ml-2 hide-new" id="btnReset">Reset Device</button>
+            <button class="btn btn-default float-sm-right ml-2 hide-new" id="btnRefresh">Refresh</button>
+        </div>
+    </div>
+    <div class="row mt-2 hide-new">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">Device Charts</div>
+                <div class="card-body">
+                   <div class="table-responsive" id="table-activations"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

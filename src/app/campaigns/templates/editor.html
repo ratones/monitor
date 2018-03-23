@@ -1,0 +1,117 @@
+    <form class="pl-4 pr-4">
+        <div class="row">
+            <div class="col">
+                <div class="form-group row mb-0 mb-0">
+                    <label for="name" class="col-sm-3 col-form-label">Campaign name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="name" class="form-control form-control-sm" placeholder="Campaign name">
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="start_date" class="col-sm-3 col-form-label">Start date:</label>
+                    <div class="input-group date col-sm-9 input-group-sm mb-2" id="start_date-container" data-target-input="nearest">
+                        <input type="text"  id="start_date" class="form-control datetimepicker-input" placeholder="Start date" data-target="#start_date-container"
+                        />
+                        <div class="input-group-append" data-target="#start_date-container" data-toggle="datetimepicker">
+                            <div class="input-group-text">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="end_date" class="col-sm-3 col-form-label">End date:</label>
+                    <div class="input-group date col-sm-9 input-group-sm mb-2" id="end_date-container" data-target-input="nearest">
+                        <input type="text" id="end_date" class="form-control datetimepicker-input" placeholder="End date" data-target="#end_date-container"
+                        />
+                        <div class="input-group-append" data-target="#end_date-container" data-toggle="datetimepicker">
+                            <div class="input-group-text">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="client_id" class="col-sm-3 col-form-label">Client:</label>
+                    <div class="col-sm-9">
+                        <select id="client_id" width="100%" class="form-control form-control-sm" placeholder="Client"></select>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="brand" class="col-sm-3 col-form-label">Brand:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="brand" class="form-control form-control-sm" placeholder="Brand">
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="notify_email" class="col-sm-3 col-form-label">Notification e-mail:</label>
+                    <div class="col-sm-9 input-group input-group-sm mb-2">
+                        <input type="text" id="notify_email" class="form-control " placeholder="Notification e-mail">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="country" class="col-sm-3 col-form-label">Country:</label>
+                    <div class="col-sm-9">
+                        <select id="country" class="form-control form-control-sm" placeholder="Country"></select>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="notify_phone" class="col-sm-3 col-form-label">Notification phone:</label>
+                    <div class="col-sm-9 input-group input-group-sm mb-2">
+                        <input type="text" id="notify_phone" class="form-control" placeholder="Notification phone">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group row mb-0">
+                    <label for="status" class="col-sm-3 col-form-label">Status:</label>
+                    <div class="col-sm-9">
+                        <select id="status" class="form-control form-control-sm" placeholder="Status">
+                            <option>Active</option>
+                            <option>Pending</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="color" class="col-sm-3 col-form-label">Color:</label>
+                    <div class="col-sm-9 ">
+                        <!-- <div class="input-group-prepend">input-group input-group-sm mb-2
+                            <div class="input-group-text" id="color-preview" style="background-color:{{color}}"></div>
+                        </div> -->
+                        <select id="color" class="form-control" placeholder="Color">
+                            <option>#DD4013</option>
+                            <option>#F05A28</option>
+                            <option>#F6921E</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row mb-0">
+                    <label for="settings" class="col-sm-3 col-form-label">Settings:</label>
+                    <div class="col-sm-9">
+                        <select id="settings" class="form-control form-control-sm" placeholder="Settings"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary float-sm-right" id="btnSave">Save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>

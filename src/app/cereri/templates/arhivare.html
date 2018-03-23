@@ -1,0 +1,171 @@
+<div class=" w2ui-page big-form" style="width: 1000px; height:810px; margin:auto">
+    <fieldset class="date-civ">
+        <legend>Date vehicul</legend>
+    	<div class="w2ui-field" style="float:left">
+            <label>Categorie:</label>
+            <div><input type="text"  id="cat" readonly/></div>
+        </div>
+        <div class="w2ui-field" >
+            <label>Caroserie:</label>
+            <div><input type="text"  id="tip_caros" readonly size="60"/></div>
+        </div>
+        <div class="w2ui-field" style="float:left">
+            <label>Marca:</label>
+            <div><input type="text"  id="marca" readonly/></div>
+        </div>
+        <div class="w2ui-field">
+            <label>Tip/Varianta/Versiune:</label>
+            <div><input type="text"  id="tip_compus" readonly size="60"/></div>
+        </div>
+         <div class="w2ui-field" style="float:left">
+            <label>Nr. Registru:</label>
+            <div><input type="text"  id="nr_registr" readonly/></div>
+        </div>
+         <div class="w2ui-field">
+            <label>WVTA:</label>
+            <div><input type="text"  id="wvta" readonly size="60"/></div>
+        </div>
+        <fieldset class="tehnic-civ">
+        	<legend>Mase</legend>
+        	<table>
+        		<tr>
+        			<td>Proprie:</td><td><input readonly type="text" id="masa"></td>
+        			<td>Utila:</td><td><input readonly type="text" id="masutil"></td>
+        			<td>Carlig:</td><td><input readonly type="text" id="mascr"></td>
+        			<td>Totala:</td><td><input readonly type="text" id="masa_total"></td>
+        			<td>Axa fata:</td><td><input readonly type="text" id="masf"></td>
+        			<td>Axa spate:</td><td><input readonly type="text" id="mass"></td>
+        		</tr>
+        		<tr>
+        			<td colspan="3">Remorcabila cu franare:</td><td colspan="3"><input readonly type="text" id="masrecf"></td>
+        			<td colspan="3">Remorcabila fara franare:</td><td colspan="3"><input readonly type="text" id="masrec"></td>
+        		</tr>
+        	</table>
+        </fieldset>
+        <fieldset class="tehnic-civ">
+        	<legend>Locuri</legend>
+        	<table>
+        		<tr>
+        			<td>Total:</td><td><input readonly type="text" id="locuri"></td>
+        			<td>Fata:</td><td><input readonly type="text" id="focurif"></td>
+        			<td>Scaune:</td><td><input readonly type="text" id="locurisc"></td>
+        			<td>Picioare:</td><td><input readonly type="text" id="locuripi"></td>
+        		</tr>
+        	</table>
+        </fieldset>
+         <fieldset class="tehnic-civ">
+        	<legend>Dimensiuni</legend>
+        	<table>
+        		<tr>
+        			<td>Lungime:</td><td><input readonly type="text" id="lungmax"></td>
+        			<td>Latime:</td><td><input readonly type="text" id="latmax"></td>
+        			<td>Inaltime:</td><td><input readonly type="text" id="hmax"></td>
+        		</tr>
+        	</table>
+        </fieldset>
+        <fieldset class="tehnic-civ">
+        	<legend>Motor</legend>
+        	<table>
+        		<tr>
+        			<td>Cod:</td><td><input readonly type="text" id="cod" class="large"></td>
+        			<td>Cilindree:</td><td><input readonly type="text" id="cilindree"></td>
+        			<td>Putere(kW):</td><td><input readonly type="text" id="p_max_kw"></td>
+        			<td>Turatie:</td><td><input readonly type="text" id="rot_p_max"></td>
+        		</tr>
+        		<tr>
+        			<td>Combustibil:</td><td><input readonly type="text" id="combustib" class="large"></td>
+        			<td>Vit. max:</td><td><input readonly type="text" id="vitezamax"></td>
+        			<td>Zgomot mers:</td><td><input readonly type="text" id="sonext"></td>
+        			<td>Zgomot stat.:</td><td><input readonly type="text" id="sonexts"></td>
+        		</tr>
+        	</table>
+        </fieldset>
+        <fieldset class="tehnic-civ">
+        	<legend>Alte date</legend>
+        	<table>
+        		<tr>
+        			<td>Rezervor:</td><td><input readonly type="text" id="rezervor"></td>
+        			<td>Tractiune:</td><td><input readonly type="text" id="tractiune" class="large"</td>
+        		</tr>
+        	</table>
+        </fieldset>
+        <fieldset class="tehnic-civ">
+        	<legend>Anvelope</legend>
+        	<table>
+        		<tr>
+        			<td>Axa fata:</td><td><input readonly type="text" id="anvelopa" class="large"></td>
+        			<td>Axa spate:</td><td><input readonly type="text" id="roatas" class="large"></td>
+        		</tr>
+        		<tr>
+        			<td>Tolerate fata:</td><td><input readonly type="text" id="anvel_toler_fata" class="large"></td>
+        			<td>Tolerate spate:</td><td><input readonly type="text" id="anvel_toler_spate" class="large"></td>
+        		</tr>
+        	</table>
+        </fieldset>
+    </fieldset>
+    <fieldset class="date-civ">
+    	<legend>Date identificare</legend>
+    	<table>
+    		<tr>
+    			<td>
+	    			<div class="w2ui-field">
+			            <label>Nr. Identificare:</label>
+			            <div><input type="text"  id="vin"/><input type="text"  id="nr_identif" style="display:none"/></div>
+	         		</div>
+         		</td>
+         		<td rowspan="3">
+    				<div class="w2ui-field">
+			            <label>Mentiuni:</label>
+			            <div><textarea readonly id="mentiuni"></textarea></div>
+			        </div>
+    			</td>
+         	</tr>
+         	<tr>
+    			<td>
+			         <div class="w2ui-field">
+			            <label>Serie motor:</label>
+			            <div><input readonly type="text"  id="serie_mot" style="width:150px"/></div>
+			        </div>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>
+			        <div class="w2ui-field">
+			            <label>Culoare:</label>
+			            <div><input readonly type="text"  id="cul"/></div>
+			        </div>
+    			</td>
+    		</tr>
+    	</table>
+    </fieldset>
+    <fieldset class="date-civ">
+    	<legend>Arhivare CIV si Folie</legend>
+    	<div class="w2ui-field">
+            <label>Serie CIV:</label>
+            <div><input type="text"  id="serieciv" tabindex="1" autofocus /><input type="text"  id="serie_civ" style="display:none"/></div>
+        </div>
+        <div class="w2ui-field">
+            <label>Serie Folie:</label>
+            <div><input type="text"  id="folie_civ" tabindex="2" /></div>
+        </div>
+    </fieldset>
+</div>
+<div id="buttons" style="position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    background:#F2F2F2">
+    <div  id="operation_container">
+        <button title="Salvare" class="w2ui-btn w2ui-btn-green" id="btnSave"><i class="w2ui-icon-save" tabindex="3"></i> Salveaza
+        </button>
+        <button title="Inchide" class="w2ui-btn w2ui-btn-default" id="btnClose"><i class="w2ui-icon-cross"></i> Inchide
+        </button>
+    </div>
+    <div  id="supervize_container" style="margin-top:5px;">
+        <button id="btnFirst">|<</button>
+        <button id="btnPrev"><</button>
+        <label id="currentIndex" style="width:50px"></label> din <label id="totalciv" style="width:50px"></label>
+        <button id="btnNext">></button>
+        <button id="btnLast">>|</button>
+    </div>
+</div>

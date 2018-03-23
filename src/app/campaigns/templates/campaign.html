@@ -1,0 +1,81 @@
+<div class="card">
+    <div class="card-header" id="headingOne" style="background-color:{{color}}; padding:0">
+        <h5 class="mb-0">
+            <button id="header-link" class="btn btn-link" data-toggle="collapse" data-target="#collapse{{id}}" aria-expanded="false"
+                aria-controls="collapse{{id}}" style="color:black">
+                {{name}}
+            </button>
+        </h5>
+    </div>
+
+    <div id="collapse{{id}}" class="collapse hide" aria-labelledby="heading{{id}}" data-parent="#accordion">
+        <div class="card-body">
+            <ul class="nav nav-tabs" id="campaign-tabs{{id}}">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" id="state-dropdown" aria-haspopup="true"
+                        aria-expanded="false">State</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item status-change{{id}}" href="#">Active</a>
+                        <a class="dropdown-item status-change{{id}}" href="#">Pending</a>
+                        <a class="dropdown-item status-change{{id}}" href="#">Completed</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a> -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" id="menu-dropdown{{id}}" aria-haspopup="true"
+                        aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item menu-change{{id}}" data-action="files" href="#">
+                            <i class="fa fa-file"></i> Files</a>
+                        <a class="dropdown-item menu-change{{id}}" data-action="settings" href="#">
+                            <i class="fa fa-cog"></i> Settings</a>
+                        <a class="dropdown-item menu-change{{id}}" data-action="add-device" href="#">
+                            <i class="fa fa-plus"></i> Add device</a>
+                        <a class="dropdown-item menu-change{{id}}" data-action="editCampaign" href="#">
+                            <i class="fa fa-pencil"></i> Edit campaign</a>
+                        <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link show active" id="pills-devices-tab{{id}}" data-toggle="pill" href="#pills-devices{{id}}" role="tab" aria-controls="pills-device{{id}}"
+                        aria-selected="true">Devices</i>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent{{id}}" style="min-height:20em">
+            <div class="tab-pane fade show active container-fluid" id="pills-devices{{id}}" role="tabpanel" aria-labelledby="pills-devices{{id}}-tab">
+                tab devices
+                <div class="dropdown">
+                    <div class="form-group row mb-0">
+                        <label for="notify_email" class="col-sm-3 col-form-label">Notification e-mail:</label>
+                        <div class="col-sm-9 input-group input-group-sm mb-2">
+                            <input type="text" id="notify_email" class="form-control " placeholder="Notification e-mail">
+                            <div class="input-group-append">
+                                <div class="input-group-text dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
